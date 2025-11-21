@@ -1,0 +1,44 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f093fb, #f5576c, #ffefba);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* start from top to avoid cutting */
+  padding: 50px 0; /* add top/bottom padding */
+}
+
+
+@keyframes gradientAnimation {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+
+form {
+  background-color: #ffffffcc; /* semi-transparent */
+  padding: 35px 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+@media (max-height: 600px) {
+  body {
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
