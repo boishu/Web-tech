@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styleMain.css">
+    <link rel="stylesheet" href="styleForm.css">
+    <link rel="stylesheet" href="styleTable.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📚 Library Management System</h1>
+
+        <div class="form-box">
+            <input type="text" id="titleInput" placeholder="Enter Book Title">
+            <input type="text" id="yearInput" placeholder="Enter Publication Year">
+            <button onclick="addBook()">Add Book</button>
+        </div>
+
+        <table id="bookTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
